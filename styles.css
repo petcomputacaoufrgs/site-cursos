@@ -191,13 +191,14 @@ body {
     color: #5bbee6;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
     .logo-pet {
         width: 60%;
     }
 
     .botao-info {
         font-size: 1.5rem;
+        padding: 10px;
     }
 }
 
