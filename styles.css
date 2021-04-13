@@ -4,66 +4,71 @@
     box-sizing: border-box;
 }
 
-.background {
-    min-height: 100vh;
-    background-image: url(/Images/sandpaper.png);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.default-settings {
+    background-image: url(./images/sandpaper.png);
 }
 
 .flex-box {
     display: flex;
 }
 
-.lateral-informacoes {
+.lateral-information {
     position: sticky;
     top: 0;
     width: 35%;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .dentro-informacoes {
-    height: 100%;
     width: 75%;
-    background-image: url(/Images/menu-background.png);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    -moz-box-shadow:    1px 1px 6px 2px #767d81;
-    -webkit-box-shadow: 1px 1px 6px 2px #767d81;
-    box-shadow:         1px 1px 6px 2px #767d81;
+    box-shadow: 1px 1px 6px 2px #767d81;
+}
+
+.default-settings .dentro-informacoes {
+    background-image: url(./images/menu-background.png);
 }
 
 .logo-pet {
     width: 70%;
     border-radius: 100%;
     margin-bottom: 30px;
-    background-image: url(/Images/sandpaper.png);
     border: 2px solid #C04F50;
+}
+
+.default-settings .logo-pet {
+    background-image: url(./images/sandpaper.png);
 }
 
 .informacoes-baixo {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.default-settings .botao-info {
+    background-image: url(./images/sandpaper.png);
 }
 
 .botao-info {
     width: 80%;
     margin: 10px;
-    background-image: url(/Images/sandpaper.png);
     font-family: 'Bebas Neue', cursive;
     border: 5px solid #C04F50;
     color: #C04F50;
-    padding: 20px 15px;
+    padding: 15px;
     text-decoration: none;
-    display: inline-block;
-    margin: 20px;
-    font-size: 25px;
+    font-size: 2.7rem;
     text-shadow: 2px 2px #373c3f;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -79,12 +84,11 @@
 
 .elemento-curso {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu-cursos {
     width: 65%;
+    padding: 0 12vmin;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -96,15 +100,12 @@
 }
 
 .box-texto-curso {
-    width: 70%;
-    background-image: url(/Images/hip-square.png);
+    background-image: url(./images/hip-square.png);
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border: 2px solid #C04F50;
     border-bottom: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .titulo-curso {
@@ -112,7 +113,6 @@
     color: #C04F50;
     font-size: 48px;
     text-shadow: 2px 2px #373c3f;
-    text-align: center;
 }
 
 .texto-curso {
@@ -121,7 +121,6 @@
 }
 
 .botao-curso {
-    width: 70%;
     background-color: #5bbee6;
     font-family: 'Bebas Neue', cursive;
     border: 2px solid #C04F50;
@@ -141,24 +140,90 @@
     background-color: #C04F50;
 }
 
-@media only screen and (max-width: 600px) {
-    .base {
+.stroke-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6vh;
+    text-align: center;
+    text-anchor: middle;
+    fill: none;
+}
+
+.stroke-text.fill {
+    fill:#5bbee6;
+}
+  
+.thick{
+    stroke-width:1px;
+    stroke: black;
+    transform: translate(-0.4vh, 0);
+}
+
+.project {
+    width: 60vw;
+    padding: 5rem 1rem;
+}
+
+.project-info {
+    margin: 0 0 1.5rem 0;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.project-info h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    color: #5bbee6;
+    text-shadow: 2px 2px #373c3f;
+    margin-bottom: 4rem;
+}
+
+
+.botao-info p {
+    width: 100%;
+}
+
+.permanent-project {
+    color: #5bbee6;
+}
+
+@media only screen and (max-width: 1100px) {
+    .default-settings {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
-    .lateral-informacoes{
+    .lateral-information{
         position: relative;
-        width: 95%;
-        
+        width: 100%;
+    }
+
+    .dentro-informacoes {
+        width: 100%;
     }
 
     .menu-cursos {
         width: 95%;
+        padding: 0;
     }
 
     .botao-info{
-        font-size: 18px;
+        font-size: 2rem;
+    }
+
+    .logo-pet {
+        width: 50%;
+    }
+
+    .project {
+        width: 90vw;
+        padding: 3rem 1rem;
+    }
+
+    .project-info h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
     }
 }
