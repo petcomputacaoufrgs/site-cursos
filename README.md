@@ -3,9 +3,9 @@
 ### Manutenção: Victória, Jordi e Bernardo
 
 > ## MANUTENÇÃO DO SITE: 
+> Esse site não precisa de muita manutenção, o botão de informações vai para o site WordPress do PET e o botão de redes sociais vai para o site de links do PET.
 > ### Adicionar um novo curso
-> * Esse site não precisa de muita manutenção, o botão de informações vai para o site WordPress do PET e o botão de redes sociais vai para o site de links do PET. 
-> * A única manutenção necessária se dá pela adição de cards de cursos, no qual deixo aqui o modelo pronto, onde precisará fazer a substituição de código e adicionar no local indicado.
+> * É só copiar esse trecho de html e colocar ao como último `<li></li>` do `<ul></ul>`no arquivo `cursos.html`.
 ```html
 <ul>
     <!-- Outros cursos estarão em outros li's-->
@@ -25,7 +25,7 @@
 
 
 > ### Adicionar um novo projeto com o css default do site:
-> * É só copiar o html oferecido aqui. A classe que faz a magia é a classe *default-settings*
+> * É só copiar o html oferecido aqui e adicionar um arquivo `.html` na pasta *projects* com o nome `[nome do projeto].html`. A classe que faz a magia é a classe *default-settings*
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -73,4 +73,21 @@
         </div>
     </body>
 </html>
+```
+> Além disso, no arquivo `index.html`, é só adicionar esse trecho de html com o caminho para o html recém criado e colocar ao como último `<li></li>` do `<ul></ul>`
+```html
+<ul>
+    <!-- Outros projetos estarão em outros li's-->
+    <li class="elemento-curso flex-box">
+        <div class="box-texto-curso">
+            <h1 class="titulo-curso">[NOME DO PROJETO]</h1>
+            <p class="texto-curso"> 
+                Projeto do eixo de [EIXO DO PROJETO], focado no [TECNOLOGIAS OU OBJETIVOS PRINCIPAIS DO PROJETO]
+            </p>
+        </div>
+        <a href="./projects/[NOME DO SEU PROJETO].html" class="botao-curso">
+            Saiba mais
+        </a>
+    </li>
+</ul>
 ```
