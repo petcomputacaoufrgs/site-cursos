@@ -191,6 +191,31 @@ body {
     color: #5bbee6;
 }
 
+.default-settings.redirect {
+    margin: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default-settings.redirect h1 {
+    font-size: 6vmin;
+    margin-bottom: 2vmin;
+}
+
+.default-settings.redirect p {
+    font-size: 3vmin;
+    margin-bottom: 4vmin;
+}
+
+.default-settings.redirect a {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #e1e2e2;
+    background-color: #C04F50;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1450px) {
     .logo-pet {
         width: 60%;

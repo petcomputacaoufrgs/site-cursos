@@ -5,7 +5,7 @@
 > ## MANUTENÇÃO DO SITE: 
 > Esse site não precisa de muita manutenção, o botão de informações vai para o site WordPress do PET e o botão de redes sociais vai para o site de links do PET.
 > ### Adicionar um novo curso
-> * É só copiar esse trecho de html e colocar ao como último `<li></li>` do `<ul></ul>`no arquivo `cursos.html`.
+> * É só copiar esse trecho de html e colocar ao como último `<li></li>` do `<ul></ul>`no arquivo `cursos/index.html`.
 ```html
 <ul>
     <!-- Outros cursos estarão em outros li's-->
@@ -48,7 +48,7 @@
                     <a href="../index.html" class="botao-info flex-box">
                         <p>Todos os projetos</p>
                     </a>
-                    <a href="../cursos.html" class="botao-info flex-box">
+                    <a href="../cursos/index.html" class="botao-info flex-box">
                         <p>Nossos Cursos</p>
                     </a>
                     <a target="_blank" href="https://lnk.bio/lEJP" class="botao-info flex-box">
