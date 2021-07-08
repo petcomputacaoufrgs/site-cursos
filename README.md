@@ -25,7 +25,7 @@
 
 
 > ### Adicionar um novo projeto com o css default do site:
-> * É só copiar o html oferecido aqui e adicionar um arquivo `.html` na pasta *projects* com o nome `[nome do projeto].html`. A classe que faz a magia é a classe *default-settings*
+> * É só copiar o html oferecido aqui e adicionar um arquivo `.html` na pasta *projetos* com o nome `[nome do projeto].html`. A classe que faz a magia é a classe *default-settings*
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +45,7 @@
                     <a target="_blank" href="https://www.inf.ufrgs.br/site/pet/" class="botao-info flex-box">
                         <p>Conheça o pet</p>
                     </a>
-                    <a href="../index.html" class="botao-info flex-box">
+                    <a href="./index.html" class="botao-info flex-box">
                         <p>Todos os projetos</p>
                     </a>
                     <a href="../cursos/index.html" class="botao-info flex-box">
@@ -85,7 +85,7 @@
                 Projeto do eixo de [EIXO DO PROJETO], focado no [TECNOLOGIAS OU OBJETIVOS PRINCIPAIS DO PROJETO]
             </p>
         </div>
-        <a href="./projects/[NOME DO SEU PROJETO].html" class="botao-curso">
+        <a href="./[NOME DO SEU PROJETO].html" class="botao-curso">
             Saiba mais
         </a>
     </li>
