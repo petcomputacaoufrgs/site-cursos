@@ -5,97 +5,166 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles.css">
     <title>PET Computação - Home</title>
 </head>
 
-<body class="default-settings flex-box">
-    <div class="lateral-information flex-box">
-        <div class="dentro-informacoes flex-box">
-            <img src="../images/LogoPET_oficial.png" alt="logo PET Computacao" class="logo-pet">
-            <div class="informacoes-baixo flex-box">
-                <a target="_blank" href="https://www.inf.ufrgs.br/site/pet/" class="botao-info">
-                    <p>Conheça o pet</p>
-                </a>
-                <a href="../cursos/index.html" class="botao-info">
-                    <p>Nossos Cursos</p>
-                </a>
-                <a target="_blank" href="https://lnk.bio/lEJP" class="botao-info">
-                    <p>Redes Sociais</p>
-                </a>
-            </div>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="../images/LogoPET_oficial.png" alt="Logo PET">
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="container flex" id="navbar-links">
+            <a href="https://inf.ufrgs.br/pet">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="#courses">Cursos</a>
+            <a href="#footer">Nossas Redes</a>
+        </div>
+    </nav>
+    <div class="content-bg">
+        <div class="container">
+            <!-- LISTA DOS PROJETOS -->
+            <h2 class="home-title" id="projects">Projetos</h2>
+            <ul class="hexGrid">
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./lobo.html">
+                            <img src="../images/006-lobo.png" alt="icone lobo" />
+                            <h3>Lobo</h3>
+                            <p>Eixo: Pesquisa</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./hidra.html">
+                            <img src="../images/004-hidra.png" alt="icone hidra" />
+                            <h3>Hidra</h3>
+                            <p>Eixo: Desenvolvimento / Ensino</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./cafe_com_pet.html">
+                            <img src="../images/007-gatinha.png" alt="icone gata segurando café" />
+                            <h3>Café com PET</h3>
+                            <p>Eixo: Interação</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./dragao/dragao.html">
+                            <img src="../images/003-dragao.png" alt="icone dragão" />
+                            <h3>Dragão</h3>
+                            <p>Eixo: Interação</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./dino.html">
+                            <img src="../images/002-stegosaurus.png" alt="icone dinossauro" />
+                            <h3>Dino</h3>
+                            <p>Eixo: Desenvolvimento</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./pinguim.html">
+                            <img src="../images/pinguim.png" alt="icone pinguim" />
+                            <h3>Pinguim</h3>
+                            <p>Eixo: Desenvolvimento / Ensino</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="./papagaio.html">
+                            <img src="../images/papagaio.png" alt="icone papagaio" />
+                            <h3>Papagaio</h3>
+                            <p>Eixo: Pesquisa</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- LISTA DOS CURSOS -->
+            <h2 class="home-title" id="courses">Cursos</h2>
+            <ul class="hexGrid">
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="https://petcomputacaoufrgs.github.io/intro-ao-git/o-que-eh.html"
+                            target="_blank">
+                            <img src="../images/Git-Icon.png" alt="" />
+                            <h3>Git</h3>
+                            <p>Uma introdução ao Git</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="https://petcomputacaoufrgs.github.io/intro-ao-latex/" target="_blank">
+                            <img style="padding: 40%;" src="../images/LaTeX-logo.png" alt="" />
+                            <h3>Latex</h3>
+                            <p>Uma introdução ao Latex</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="https://petcomputacaoufrgs.github.io/cv-guide/" target="_blank">
+                            <img style="padding: 25%;" src="../images/cv.png" alt="" />
+                            <h3>Currículo</h3>
+                            <p>Um passo a passo para construir o currículo</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" href="https://petcomputacaoufrgs.github.io/intro-ao-arduino/" target="_blank">
+                            <img style="padding: 35%;" src="../images/arduino-logo-6.png" alt="logo do arduíno" />
+                            <h3>Arduíno</h3>
+                            <p>Uma introdução ao arduíno</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="new-container">
-        <h2 class="home-title" id="projects">Projetos</h2>
-        <ul class="hexGrid">
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./lobo.html">
-                        <img src="../images/006-lobo.png" alt="icone lobo" />
-                        <h1>Lobo</h1>
-                        <p>Eixo: Pesquisa</p>
+    <footer id="footer">
+        <div class="container flex">
+            <div class="item">
+                <h3>PET Computação</h3>
+                <p>pet@inf.ufrgs.br</p>
+                <p>petcompufrgs@gmail.com</p>
+            </div>
+            <div class="item">
+                <h4>Nos acompanhe em nossas redes sociais!</h4>
+                <div class="container flex" id="social-media">
+                    <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./cafeComPET/cafe_com_pet.html">
-                        <img src="../images/007-gatinha.png" alt="icone gata segurando café" />
-                        <h1>Café com PET</h1>
-                        <p>Eixo: Interação</p>
-                    </a>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./dino/dino.html">
-                        <img src="../images/002-stegosaurus.png" alt="icone dinossauro" />
-                        <h1>Dino</h1>
-                        <p>Eixo: Desenvolvimento</p>
-                    </a>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./hidra.html">
-                        <img src="../images/004-hidra.png" alt="icone hidra" />
-                        <h1>Hidra</h1>
-                        <p>Eixo: Desenvolvimento / Ensino</p>
-                    </a>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./dragao/dragao.html">
-                        <img src="../images/003-dragao.png" alt="icone dragão" />
-                        <h1>Dragão</h1>
-                        <p>Eixo: Interação</p>
-                    </a>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./pinguim/pinguim.html">
-                        <img src="../images/pinguim.png" alt="icone pinguim" />
-                        <h1>Pinguim</h1>
-                        <p>Eixo: Desenvolvimento / Ensino</p>
-                    </a>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="./papagaio.html">
-                        <img src="../images/papagaio.png" alt="icone papagaio" />
-                        <h1>Papagaio</h1>
-                        <p>Eixo: Pesquisa</p>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Importando as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 html {
     font-size: 1.2rem;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -12,269 +14,186 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-}
-
-.default-settings {
-    background-image: url(./images/sandpaper.png);
-}
-
-.flex-box {
-    display: flex;
-    flex-direction: row;
-}
-
-.lateral-information {
-    position: sticky;
-    top: 0;
-    width: 35%;
-    justify-content: center;
-    height: 100vh;
-}
-
-.dentro-informacoes {
-    width: 75%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 1px 1px 6px 2px #767d81;
-}
-
-.default-settings .dentro-informacoes {
-    background-image: url(./images/menu-background.png);
-}
-
-.logo-pet {
-    width: 70%;
-    border-radius: 100%;
-    margin-bottom: 30px;
-    border: 2px solid #C04F50;
-}
-
-.default-settings .logo-pet {
-    background-image: url(./images/sandpaper.png);
-}
-
-.informacoes-baixo {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.default-settings .botao-info {
-    background-image: url(./images/sandpaper.png);
-}
-
-.botao-info {
-    width: 80%;
-    margin: 10px;
-    font-family: 'Bebas Neue', cursive;
-    border: 5px solid #C04F50;
-    color: #C04F50;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 2.7rem;
-    text-shadow: 2px 2px #373c3f;
-    text-align: center;
-}
-
-.botao-info:hover {
-    border: 5px solid #5bbee6;
-    color: #5bbee6;
-    cursor: pointer;
-}
-
-.lista-cursos {
-    list-style-type: none;
-}
-
-.elemento-curso {
-    flex-direction: column;
-}
-
-.menu-cursos {
-    width: 65%;
-    padding: 0 12vmin;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.imagem-cursos {
-    margin: 30px;
-    max-width: 100%;
-}
-
-.box-texto-curso {
-    background-image: url(./images/hip-square.png);
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-    border: 2px solid #C04F50;
-    border-bottom: none;
-    text-align: center;
-}
-
-.titulo-curso {
-    font-family: 'Bebas Neue', cursive;
-    color: #C04F50;
-    font-size: 48px;
-    text-shadow: 2px 2px #373c3f;
-}
-
-.texto-curso {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
-
-.botao-curso {
-    background-color: #5bbee6;
-    font-family: 'Bebas Neue', cursive;
-    border: 2px solid #C04F50;
-    border-top: none;
-    color: #373c3f;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 45px;
-    font-weight:bold;
-    text-shadow: 2px 2px #e1e2e2;
-    margin-bottom: 20px;
-}
-
-.botao-curso:hover {
-    cursor: pointer;
-    background-color: #C04F50;
-}
-
-.stroke-text{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 6vh;
-    text-align: center;
-    text-anchor: middle;
-    fill: none;
-}
-
-.stroke-text.fill {
-    fill:#5bbee6;
+  
+  /* Classes Úteis */
+  
+.container {
+    max-width: 80%;
+    margin: auto;
 }
   
-.thick{
-    stroke-width:1px;
-    stroke: black;
-    transform: translate(-0.4vh, 0);
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.project {
-    width: 60vw;
-    padding: 5rem 1rem;
-}
-
-.project-info {
-    margin: 0 0 1.5rem 0;
-}
-
-.bold-font {
+.bold {
     font-weight: bold;
 }
-
-.project-info h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4rem;
-    color: #5bbee6;
-    text-shadow: 2px 2px #373c3f;
-    margin-bottom: 2rem;
+  
+/* Conteúdo */
+  
+.home-title {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #C04F50;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  
+.content-bg {
+    background-image: url(./images/sandpaper.png);
+    padding: 1rem 0;
+}
+  
+/* Header */
+  
+#header {
+    background: #619AA7;
+}
+  
+#header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
 }
 
-
-.botao-info p {
+#courses {
+    margin-top: 2rem;
+}
+  
+/* Navbar */
+  
+#navbar {
+    background: #C04F50;
+    overflow: auto;
     width: 100%;
+    position: sticky;
+}
+  
+#navbar a {
+    color: #FAFAFA;
+    font-family: Source Code Pro;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+  
+#navbar a:hover {
+    background: #C46567;
 }
 
-.permanent-project {
-    color: #5bbee6;
+/* Footer */
+  
+#footer {
+    background: #C04F50;
+    font-family: Roboto;
+    padding: 2rem;
+}
+  
+#footer .container {
+    justify-content: space-between;
+}
+  
+#footer h3 {
+    color: #12121288;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.default-settings.redirect {
-    margin: 10vmin;
-    display: flex;
-    flex-direction: column;
+#footer h4 {
+    font-size: 1.2rem;
+}
+  
+#footer h4, p {
+    color: #FAFAFA;
+    padding-bottom: 0.5rem;
+}
+  
+#footer #social-media a {
+    color: #12121266;
+    font-size: 2.5rem;
+}
+
+/* Páginas dos Projetos */
+.project-page {
+    font-family: Source Code Pro;
+    font-size: 1rem;
+}
+
+.project-header {
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #C04F50;
+}
+
+.project-header h2 {
+    font-family: Comfortaa;
+    font-size: 6rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.project-header h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 1rem;
+}
+
+.project-logo {
+    display: grid;
     align-items: center;
 }
 
-.default-settings.redirect h1 {
-    font-size: 6vmin;
-    margin-bottom: 2vmin;
+.project-logo img {
+    grid-area: 1 / 1;
+    margin: auto;
 }
 
-.default-settings.redirect p {
-    font-size: 3vmin;
-    margin-bottom: 4vmin;
+.project-img{
+    height: 29vh;
 }
 
-.default-settings.redirect a {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    color: #e1e2e2;
-    background-color: #C04F50;
+.hexagon-img{
+    height: 45vh;
+}
+
+.project-content h4, .project-description, .project-content a {
+    text-align: justify;
+    margin-top: 0.75rem;
+}
+
+.project-content h4 {
+    font-size: 1.25rem;
+    color: #C04F50;
+}
+
+.project-content p {
+    color: #121212;
+    padding-bottom: 0.5rem;
+}
+
+.project-content li {
+    list-style: none;
+}
+
+.project-content a {
     text-decoration: none;
+    font-weight: bold;
+    color: #C04F50;
 }
 
-@media only screen and (max-width: 1450px) {
-    .logo-pet {
-        width: 60%;
-    }
-
-    .botao-info {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .default-settings {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lateral-information{
-        position: relative;
-        width: 100%;
-    }
-
-    .dentro-informacoes {
-        width: 100%;
-    }
-
-    .menu-cursos {
-        width: 95%;
-        padding: 0;
-    }
-
-    .botao-info{
-        font-size: 2rem;
-    }
-
-    .logo-pet {
-        width: 50%;
-    }
-
-    .project {
-        width: 90vw;
-        padding: 3rem 1rem;
-    }
-
-    .project-info h1 {
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
-    }
+.project-content a:hover {
+    text-decoration: underline;
+    color: #C46567;
 }
 
 /* Hexagonos */
-
+  
 .hexGrid {
     display: flex;
     flex-wrap: wrap;
@@ -284,21 +203,21 @@ body {
     font-family: Source Code Pro;
     font-size: 15px;
     list-style-type: none;
-  }
-  
-  .hex {
+}
+    
+.hex {
     position: relative;
     visibility:hidden;
     outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  }
+}
   
-  .hex::after{
+.hex::after{
     content:'';
     display:block;
     padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
-  }
-  
-  .hexIn{
+}
+    
+.hexIn{
     position: absolute;
     width:96%;
     padding-bottom: 110.851%; /* =  width / sin(60) */
@@ -307,31 +226,31 @@ body {
     visibility: hidden;
     outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
     -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-        -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-            transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-  }
-  
-  .hexIn * {
+    -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+    transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+    
+.hexIn * {
     background: #77c1d1;
     position: absolute;
     visibility: visible;
     outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  }
+}
   
-  .hexLink {
+.hexLink {
     display:block;
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: #FAFAFA;
     overflow: hidden;
     -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-  }
-  
-  /*** HEX CONTENT **********************************************************************/
-  .hex img {
+    -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+    transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+        
+/*** HEX CONTENT ***/
+.hex img {
     left: -100%;
     right: -100%;
     width: auto;
@@ -339,121 +258,150 @@ body {
     padding: 20%;
     margin: 0 auto;
     -webkit-transform: rotate3d(0,0,0,0deg);
-      -ms-transform: rotate3d(0,0,0,0deg);
-          transform: rotate3d(0,0,0,0deg);
-  }
-  
-  .hex h1, .hex p {
+    -ms-transform: rotate3d(0,0,0,0deg);
+    transform: rotate3d(0,0,0,0deg);
+}
+
+.hex h3, .hex p {
     width: 100%;
     padding: 5%;
     box-sizing:border-box;
     background-color: #77c1d1;
     font-weight: 300;
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
-          transition:          transform .2s ease-out, opacity .3s ease-out;
-  }
+    transition:          transform .2s ease-out, opacity .3s ease-out;
+}
   
-  .hex h1 {
+.hex h3 {
     bottom: 50%;
     padding-top:50%;
     font-size: 1.5em;
     z-index: 1;
     -webkit-transform:translate3d(0,-100%,0);
-      -ms-transform:translate3d(0,-100%,0);
-          transform:translate3d(0,-100%,0);
-  }
+    -ms-transform:translate3d(0,-100%,0);
+    transform:translate3d(0,-100%,0);
+}
   
-  .hex h1::after {
+.hex h3::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 45%;
     width: 10%;
     text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-  
-  .hex p {
+    border-bottom: 1px solid #FAFAFA;
+}
+
+.hex p {
     top: 50%;
     padding-bottom:50%;
     -webkit-transform:translate3d(0,100%,0);
-      -ms-transform:translate3d(0,100%,0);
-          transform:translate3d(0,100%,0);
-  }
-  
-  
-  /*** HOVER EFFECT  **********************************************************************/
-  .hexLink:hover h1, .hexLink:focus h1,
-  .hexLink:hover p, .hexLink:focus p{
+    -ms-transform:translate3d(0,100%,0);
+    transform:translate3d(0,100%,0);
+}
+
+
+/*** HOVER EFFECT  ***/
+.hexLink:hover h3, .hexLink:focus h3,
+.hexLink:hover p, .hexLink:focus p{
     -webkit-transform:translate3d(0,0,0);
-      -ms-transform:translate3d(0,0,0);
-          transform:translate3d(0,0,0);
-  }
+    -ms-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+}
   
-  /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-  @media (min-width:901px) { /* <- 4-3  hexagons per row */
+  /*** RESPONSIVIDADE ***/
+@media (min-width:901px) { /* <- 4-3  hexagons per row */
     .hexGrid{
-      padding-bottom: 5.5%
+        padding-bottom: 5.5%
     }
     .hex {
-      width: 25%; /* = 100 / 4 */
+        width: 25%; /* = 100 / 4 */
     }
     .hex:nth-child(7n+5){ /* first hexagon of even rows */
-      margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+        margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
     }
-  }
+}
 
-  @media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+@media (max-width: 960px){
+    .project-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-header h2 {
+        font-family: Comfortaa;
+        font-size: 3rem;
+        margin: 1rem 0 0 0rem;
+    }
+    
+    .project-header h3 {
+        font-size: 1.5rem;
+        margin: 0 0 1rem 0rem;
+    }
+    
+    #footer {
+        padding: 2rem 1rem;
+    }
+    
+    #footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #social-media.container {
+        flex-direction: row;
+    }
+
+    #footer h4 {
+        padding-top: 0.5rem;
+    }
+
+    #footer #social-media a {
+        color: #12121266;
+        font-size: 2rem;
+    }
+    
+    #footer #social-media a:last-child {
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
     .hexGrid{
-      padding-bottom: 7.4%
+        padding-bottom: 7.4%
     }
     .hex {
       width: 33.333%; /* = 100 / 3 */
     }
     .hex:nth-child(5n+4){ /* first hexagon of even rows */
-      margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+        margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
     }
-  }
-  
-  @media (max-width: 600px) { /* <- 2-1  hexagons per row */
+}
+
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
     .hexGrid{
       padding-bottom: 11.2%
     }
     .hex {
-      width: 50%; /* = 100 / 3 */
+        width: 50%; /* = 100 / 3 */
     }
     .hex:nth-child(3n+3){ /* first hexagon of even rows */
-      margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+        margin-left:25%;  /* = width of .hex / 2  to indent even rows */
     }
-  
+    
     .flex {
-      flex-direction: column;
+        flex-direction: column;
+        align-items: center;
     }
-  
+    
     .flex #social-media {
-      flex-direction: row;
+        flex-direction: row;
     }
-  }
-  
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
     .hexGrid {
         font-size: 13px;
     }
-  }
-
-  .new-container {
-      width: 65%;
-      padding-top: 1rem;
-      padding-right: 1rem;
-  }
-
-  .home-title {
-    font-family: Comfortaa;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    padding-bottom: 1rem;
-    color: #C04F50;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+}

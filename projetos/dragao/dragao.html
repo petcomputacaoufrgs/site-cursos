@@ -4,47 +4,80 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../../styles.css">
         <link rel="stylesheet" href="./styles.css">
         <title>Projetos - Dragão</title>
     </head>
     <body>
-        <div class="dragao flex-box">
-            <div class="lateral-information flex-box">
-                <div class="dentro-informacoes flex-box">
-                    <img src="../../images/LogoPET_oficial.png" alt="logo PET Computacao" class="logo-pet">
-                    <div class="informacoes-baixo flex-box">
-                        <a target="_blank" href="https://www.inf.ufrgs.br/site/pet/" class="botao-info flex-box">
-                            <p>Conheça o pet</p>
+        <header id="header">
+            <div class="container">
+                <img src="../../images/LogoPET_oficial.png" alt="Logo PET">
+            </div>
+        </header>
+        <nav id="navbar">
+            <div class="container flex" id="navbar-links">
+                <a href="https://inf.ufrgs.br/pet">Home</a>
+                <a href="../index.html#projects">Todos os Projetos</a>
+                <a href="../index.html#courses">Cursos</a>
+                <a href="#footer">Nossas Redes</a>
+            </div>
+        </nav>
+        <div class="content-bg project-page">
+            <div class="container">
+                <div class="project-header flex">
+                    <div class="project-logo">
+                        <img class="hexagon-img" src="../../images/hexagon.png" alt="hexagono azul">
+                        <img class="project-img" src="../../images/003-dragao.png" alt="ícone dragão">
+                    </div>
+                    <div class="project-header-text">
+                        <h2>Dragão</h2>
+                        <h3>Status: Projeto Permanente</h3>
+                    </div>
+                </div>
+                <img src="./003-dragao.png" alt="Logo Projeto Dragão" id="logo-dragao" onclick="addAnimation()">
+                <div class="project-content">
+                    <h4>Participantes: Bernardo Beneduzi, Eduarda Waechter, Heric Rodrigues, Jordi Pujol, Léo de Vasconcelos, Nicolle Favero e Victória Duarte</h4>
+                    <h4>Ferramentas: JavaScript, HTML, CSS, Rust e WebAssembly</h4>
+                    <div class="project-description">
+                        <p>Com a pandemia, as redes sociais tornaram-se veículos de divulgação e comunicação ainda mais importantes para as organizações.</p>
+                        <p>O PET valoriza muito o contato com a comunidade, então manter as redes sociais atualizadas e alimentá-las com o desenvolvimento do grupo tornou-se fundamental.</p>
+                        <p>O Projeto Dração foi criado no final de 2020 pelas petianas Graciela e Victória com o objetivo de reviver as redes sociais do PET Computação. </p>
+                        <p>Hoje o projeto mantém-se ativo e seus participantes atuam na manutenção das redes sociais e na criação de novas séries de postagem.</p>
+                        <p>Alguns exemplos são: Conheça o Petiano, Momento Psico, PeTecnologias e ComputArtistas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container flex">
+                <div class="item">
+                    <h3>PET Computação</h3>
+                    <p>pet@inf.ufrgs.br</p>
+                    <p>petcompufrgs@gmail.com</p>
+                </div>
+                <div class="item">
+                    <h4>Nos acompanhe em nossas redes sociais!</h4>
+                    <div class="container flex" id="social-media">
+                        <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                            <i class="fab fa-github"></i>
                         </a>
-                        <a href="../index.html" class="botao-info flex-box">
-                            <p>Todos os projetos</p>
+                        <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="../../cursos/index.html" class="botao-info flex-box">
-                            <p>Nossos Cursos</p>
+                        <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                            <i class="fab fa-youtube"></i>
                         </a>
-                        <a target="_blank" href="https://lnk.bio/lEJP" class="botao-info flex-box">
-                            <p>Redes Sociais</p>
+                        <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="./003-dragao.png" alt="Logo Projeto Dragão" id="logo-dragao" onclick="addAnimation()"/>
-                <div class="project-info">
-                    <h1>Projeto Dragão</h1>
-                    <p>Com a pandemia, as redes sociais tornaram-se veículos de divulgação e comunicação ainda mais importantes para as organizações.</p>
-                    <p>O PET valoriza muito o contato com a comunidade, então manter as redes sociais atualizadas e alimentá-las com o desenvolvimento do grupo tornou-se fundamental.</p>
-                    <p>O Projeto Dração foi criado no final de outubro de 2020 pelas petianas Graciela e Victória com o objetivo de reviver as redes sociais do PET Computação. O caçulinha da família veio como uma forma de organizar e criar mais postagens e melhorar a interação do grupo com toda comunidade.</p>
-                </div>
-                <div class="project-status">
-                    <p><span class="bold-font">Responsáveis:</span> Bruno Zimmermann, Heric Rodrigues e Victória Duarte</p>
-                    <p><span class="bold-font">Eixo:</span> interação</p>
-                    <p><span class="bold-font">Status:</span> projeto permanente</p>
-                </div>
-                <p><span class="bold-font">Linguagens / Ferramentas usadas:</span> Canva e Photoshop</p>
-            </div>
-        </div>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

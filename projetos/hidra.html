@@ -4,41 +4,75 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../styles.css">
         <title>Projetos - Hidra</title>
     </head>
-    <body class="default-settings flex-box">
-        <div class="lateral-information flex-box">
-            <div class="dentro-informacoes flex-box">
-                <img src="../images/LogoPET_oficial.png" alt="logo PET Computacao" class="logo-pet">
-                <div class="informacoes-baixo flex-box">
-                    <a target="_blank" href="https://www.inf.ufrgs.br/site/pet/" class="botao-info flex-box">
-                        <p>Conheça o pet</p>
-                    </a>
-                    <a href="./index.html" class="botao-info flex-box">
-                        <p>Todos os projetos</p>
-                    </a>
-                    <a href="../cursos/index.html" class="botao-info flex-box">
-                        <p>Nossos Cursos</p>
-                    </a>
-                    <a target="_blank" href="https://lnk.bio/lEJP" class="botao-info flex-box">
-                        <p>Redes Sociais</p>
-                    </a>
+    <body>
+        <header id="header">
+            <div class="container">
+                <img src="../images/LogoPET_oficial.png" alt="Logo PET">
+            </div>
+        </header>
+        <nav id="navbar">
+            <div class="container flex" id="navbar-links">
+                <a href="https://inf.ufrgs.br/pet">Home</a>
+                <a href="./index.html#projects">Todos os Projetos</a>
+                <a href="./index.html#courses">Cursos</a>
+                <a href="#footer">Nossas Redes</a>
+            </div>
+        </nav>
+        <div class="content-bg project-page">
+            <div class="container">
+                <div class="project-header flex">
+                    <div class="project-logo">
+                        <img class="hexagon-img" src="../images/hexagon.png" alt="hexagono azul">
+                        <img class="project-img" src="../images/004-hidra.png" alt="ícone papagaio">
+                    </div>
+                    <div class="project-header-text">
+                        <h2>Hidra</h2>
+                        <h3>Status: Concluído</h3>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h4>Participantes: Bruno Zimmermann e Vinícius Carra</h4>
+                    <h4>Ferramentas: C++ e Qt</h4>
+                    <div class="project-description">
+                        <p>O projeto Hidra foi desenvolvido pelo PET Computação há alguns anos e retomado em 2020 para manutenção. Seu objetivo é auxiliar os alunos no aprendizado de máquinas hipotéticas que são estudadas nas disciplinas de Arquitetura de Computadores.</p>
+                        <p>Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.</p>
+                        <p>A última manutenção do PET incluiu algumas funcionalidades novas, como: conversor de bases (entre 2 e 36) e representação de inteiro (positivo, sinal magnitude, complemento de B e complemento de B-1); conversor de ponto (notação humana, ponto fixo e ponto flutuante) de diferentes tamanhos; e menu de localizar e substituir.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="project">
-            <div class="project-info">
-                <h1>Projeto Hidra</h1>
-                <p>O projeto Hidra foi desenvolvido pelo PET Computação há alguns anos e retomado em 2020 para manutenção. Seu objetivo é auxiliar os alunos no aprendizado de máquinas hipotéticas que são estudadas nas disciplinas de Arquitetura de Computadores.</p>
-                <p>Nessa disciplina, os alunos partem de processadores fictícios simples como o Neander e chegam em até o processador Intel. Sendo uma alternativa para diversas dessas máquinas teóricas estudadas pelas disciplinas, o Hidra é um editor de assembly integrado à interface de execução das máquinas.</p>
+        <footer id="footer">
+            <div class="container flex">
+                <div class="item">
+                    <h3>PET Computação</h3>
+                    <p>pet@inf.ufrgs.br</p>
+                    <p>petcompufrgs@gmail.com</p>
+                </div>
+                <div class="item">
+                    <h4>Nos acompanhe em nossas redes sociais!</h4>
+                    <div class="container flex" id="social-media">
+                        <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project-status">
-                <p><span class="bold-font">Eixo:</span> desenvolvimento</p>
-                <p><span class="bold-font">Responsáveis:</span> Vinicius Carra</p>
-                <p><span class="bold-font">Status:</span> manutenção</p>
-            </div>
-            <p><span class="bold-font">Linguagens / Ferramentas usadas:</span> C++ e Qt</p>
-        </div>
+        </footer>
     </body>
 </html>
