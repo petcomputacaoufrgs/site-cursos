@@ -73,7 +73,7 @@ html {
     background: #C04F50;
     overflow: auto;
     width: 100%;
-    position: sticky;
+    z-index: 1;
 }
   
 #navbar a {
@@ -87,6 +87,16 @@ html {
   
 #navbar a:hover {
     background: #C46567;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.sticky + .project-page {
+    padding-top: 100px;
 }
 
 /* Footer */
