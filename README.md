@@ -63,8 +63,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h4>Participantes: [PARTICIPANTES DO PROJETO]</h4>
-                    <h4>Ferramentas: [FERRAMENTAS/LINGUAGENS USADAS NO PROJETO]</h4>
+                    <h4><span class="bold red">Participantes:</span> [PARTICIPANTES DO PROJETO]</h4>
+                    <h4><span class="bold red">Ferramentas:</span> [FERRAMENTAS/LINGUAGENS USADAS NO PROJETO]</h4>
                     <div class="project-description">
                         <p>[DESCRIÇÃO DO PROJETO]</p>
                     </div>

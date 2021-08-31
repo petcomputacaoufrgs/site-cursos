@@ -112,9 +112,10 @@ html {
 }
   
 #footer h3 {
-    color: #12121288;
+    color: #121212;
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
+    mix-blend-mode: soft-light;
 }
 
 #footer h4 {
@@ -127,7 +128,8 @@ html {
 }
   
 #footer #social-media a {
-    color: #12121266;
+    color: #121212;
+    mix-blend-mode: soft-light;
     font-size: 2.5rem;
 }
 
@@ -172,13 +174,21 @@ html {
     height: 45vh;
 }
 
-.project-content h4, .project-description, .project-content a {
+.project-content h4, .project-content a {
     text-align: justify;
     margin-top: 0.75rem;
 }
 
+.project-description {
+    margin: 1.25rem 0;
+}
+
 .project-content h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.project-content .red {
     color: #C04F50;
 }
 
@@ -200,6 +210,54 @@ html {
 .project-content a:hover {
     text-decoration: underline;
     color: #C46567;
+}
+
+/* Tab Menu */
+.tab-menu{
+    display: none;
+    flex-direction: row;
+}
+
+.tab {
+    background-color: #f1f1f1;
+    width: 35%;
+    height: auto;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #121212;
+    font-weight: bold;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    color: #C04F50;
+    background-color: #ddd;
+}
+
+.tab button.active {
+    color: #C04F50;
+    border-right: 3px solid #C04F50;
+}
+
+.tabcontent {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    width: 65%;
+    height: auto;
+    display: none;
+}
+
+.tab-img-text p {
+    text-align: justify;
 }
 
 /* Hexagonos */
@@ -374,6 +432,14 @@ html {
     
     #footer #social-media a:last-child {
         letter-spacing: 0;
+    }
+
+    .button-tab-menu {
+        display: none;
+    }
+
+    .tab-menu {
+        display: none;
     }
 }
 

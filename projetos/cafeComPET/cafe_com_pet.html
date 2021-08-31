@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Projetos - Café com PET</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="../../images/LogoPET_oficial.png" alt="Logo PET">
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="container flex" id="navbar-links">
+            <a href="https://inf.ufrgs.br/pet">Home</a>
+            <a href="../index.html#projects">Todos os Projetos</a>
+            <a href="../index.html#courses">Cursos</a>
+            <a href="#footer">Nossas Redes</a>
+        </div>
+    </nav>
+    <div class="content-bg project-page">
+        <div class="container">
+            <div class="project-header flex">
+                <div class="project-logo">
+                    <img class="hexagon-img" src="../../images/hexagon.png" alt="hexagono azul">
+                    <img class="project-img" src="../../images/007-gatinha.png" alt="ícone gatinha">
+                </div>
+                <div class="project-header-text">
+                    <h2>Café com PET</h2>
+                    <h3>Status: Projeto Permanente</h3>
+                </div>
+            </div>
+            <div class="project-content">
+                <h4><span class="bold red">Participantes:</span> Bernardo Beneduzi, Eduarda Waechter, Heric Rodrigues, Jordi Pujol, Léo de
+                    Vasconcelos, Nicolle Favero e Victória Duarte</h4>
+                <h4><span class="bold red">Ferramentas:</span> JavaScript, HTML, CSS, Rust e WebAssembly</h4>
+                <div class="project-description">
+                    <p>Criado em 2020 pelos petianos Jordi e Ricardo, o projeto tem o desejo de trazer discussões mais
+                        próximas à comunidade acadêmica sobre assuntos que vão além da faculdade.</p>
+                    <p>Originalmente, o Café com PET foi pensado como uma roda de conversa, onde seria possível beber
+                        café e debater. No entanto, com a chegada da pandemia, foi necessário adaptá-lo para o meio
+                        digital.</p>
+                    <p>Hoje, são organizadas, regularmente, lives no YouTube, trazendo convidados que possuem
+                        conhecimento nos assuntos debatidos para, assim, enriquecer as discussões.</p>
+                </div>
+                <div class="tab-menu">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'Ensino Remoto')"><i class="fab fa-youtube"></i> Ensino Remoto</button>
+                        <button class="tablinks" onclick="openTab(event, 'Mulheres na Computação')"><i class="fab fa-youtube"></i> Mulheres na Computação</button>
+                        <button class="tablinks" onclick="openTab(event, 'Ética')"><i class="fab fa-youtube"></i> Ética</button>
+                        <button class="tablinks" onclick="openTab(event, 'Extensão')"><i class="fab fa-youtube"></i> Extensão</button>
+                        <button class="tablinks" onclick="openTab(event, 'TCC')"><i class="fab fa-youtube"></i> TCC</button>
+                        <button class="tablinks" onclick="openTab(event, 'Intercâmbio')"><i class="fab fa-youtube"></i> Intercâmbio</button>
+                    </div>
+
+                    <div id="Ensino Remoto" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://youtu.be/v7u3cRAFyPE" target="_blank">Como lidar com o ERE</a>
+                            <img src="./images/ere.jpg" alt="">
+                            <p>Primeira edição do Café com PET, onde convidamos o Prof. Jéferson Nobre para um bate-papo
+                                sobre o funciomento e os impactos do Ensino Remoto Emergencial.</p>
+                        </div>
+                    </div>
+
+                    <div id="Mulheres na Computação" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://youtu.be/BGCsYVwC4Ig" target="_blank">Mulheres na Computação</a>
+                            <img src="./images/mulheres.jpg" alt="">
+                            <p>Segunda edição do Café com PET, onde convidamos a Prof. Viviane Moreira e a ex-aluna
+                                Jéssica Rocha para uma conversa sobre a presença das mulheres na computação.</p>
+                        </div>
+                    </div>
+
+                    <div id="Ética" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://youtu.be/TQDpPgydZqU" target="_blank">Ética nas Tecnologias Emergentes</a>
+                            <img src="./images/etica.jpg" alt="">
+                            <p>Terceira edição do Café com PET, convidamos o Prof. Edson Prestes para um bate-papo sobre
+                                a Ética nas Tecnologias Emergentes.</p>
+                        </div>
+                    </div>
+
+                    <div id="Extensão" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://youtu.be/dR4q7F4mVqQ" target="_blank">Extensão: para além dos muros da
+                                universidade</a>
+                            <img src="./images/extensao.jpg" alt="">
+                            <p>Live do Café com PET com nosso convidado Prof. Renato Ribas, onde conversaremos um pouco
+                                sobre extensão</p>
+                        </div>
+                    </div>
+
+                    <div id="TCC" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://youtu.be/Y67p9BOI0Jk" target="_blank">Desmistificando o TCC</a>
+                            <img src="./images/tcc.jpg" alt="">
+                            <p>O TCC simboliza o momento final do curso e pela sua importância pode ser motivo de stress
+                                para alguns alunos. Queremos nessa conversa trazer informações básicas sobre o TCC:
+                                conceito, finalidade, tipos possíveis, etapas, estrutura e burocracia envolvida, além de
+                                responder dúvidas. Esperamos que essas informações ajudem os alunos a se sentirem mais
+                                seguros ao iniciar essa etapa.</p>
+                        </div>
+                    </div>
+
+                    <div id="Intercâmbio" class="tabcontent">
+                        <div class="tab-img-text">
+                            <a href="https://www.youtube.com/watch?v=jZJ2LGXhakY" target="_blank">Qual seu próximo
+                                destino?</a>
+                            <img src="./images/intercambio.jpg" alt="">
+                            <p>Mais uma edição do Café com PET, onde convidamos o Prof. Nicolas Maillard e os
+                                intercambistas Nicolau Alff e Rafael Audibert para um bate-papo sobre a experiência do
+                                Intercâmbio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container flex">
+            <div class="item">
+                <h3>PET Computação</h3>
+                <p>pet@inf.ufrgs.br</p>
+                <p>petcompufrgs@gmail.com</p>
+            </div>
+            <div class="item">
+                <h4>Nos acompanhe em nossas redes sociais!</h4>
+                <div class="container flex" id="social-media">
+                    <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
