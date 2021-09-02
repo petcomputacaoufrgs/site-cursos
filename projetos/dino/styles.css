@@ -1,3 +1,14 @@
+.dino-page-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dino-page-text .project-description {
+    width: 75%;
+    text-align: justify;
+}
+
 .project-buttons {
     width: 100%;
     display: flex;
@@ -15,6 +26,16 @@
     border-radius: 20px;
     background-color: #77c1d1;
     width: 40%;
+    cursor: pointer;
+}
+
+.project-buttons button#Close {
+    width: 7%;
+    background-color: #C04F50;
+}
+
+.project-buttons button#Close:hover {
+    background-color: #C46567;
 }
 
 .project-buttons button.active, .project-buttons button:hover {
@@ -38,4 +59,61 @@
 
 .tab-img-text p {
     width: 55%;
+}
+
+.theme-item {
+    width: 24.5%;
+    font-size: 0.5rem;
+}
+
+.theme-item img {
+    width: 100%;
+}
+
+.theme-item p{
+    width: 100%;
+    text-align: center;
+}
+
+input[type="checkbox"]#Queridino {
+    content: url('./images/dormindo.png');
+    display: block;
+    width: 20%;
+    height: auto;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]#Queridino:checked {
+    content: url('./images/queridino.png');
+    width: 18%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+input[type="checkbox"]#LogoDino {
+    content: url('../../images/002-stegosaurus.png');
+    display: flex;
+    height: 29vh;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]#LogoDino:checked {
+    content: url('./images/dinoAppIcon.png');
+    height: 29vh;
+}
+
+@media (max-width: 960px){
+    .dino-page-text {
+        flex-direction: column;
+    }
+    
+    .dino-page-text .project-description {
+        width: 100%;
+    }
+
+    input[type="checkbox"] {
+        width: 55%;
+    }
+
+    input[type="checkbox"]:checked {
+        width: 50%;
+    }
 }

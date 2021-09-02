@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
+    <link REL="SHORTCUT ICON" HREF="../../images/LogoPET_SemRiscos.ico">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Projetos - Dino</title>
@@ -30,7 +31,7 @@
             <div class="project-header flex">
                 <div class="project-logo">
                     <img class="hexagon-img" src="../../images/hexagon.png" alt="hexagono azul">
-                    <img class="project-img" src="../../images/002-stegosaurus.png" alt="ícone dino">
+                    <input id="LogoDino" class="native-hidden" type="checkbox" />
                 </div>
                 <div class="project-header-text">
                     <h2>Dino App</h2>
@@ -42,19 +43,23 @@
                     Pedro Silva, Léo de Vasconcelos, Mayra Cademartori e Victória Duarte</h4>
                 <h4><span class="bold red">Ferramentas:</span> Figma, Canva, Photoshop, Typescript, HTML, CSS, ReactJS,
                     Java, Spring e PostgreSQL</h4>
-                <div class="project-description">
-                    <p>Dino, como é carinhosamente chamado, é um aplicativo feito em parceria com o Hospital de Clínicas
-                        de Porto Alegre e tem como principal objetivo incentivar crianças em tratamento de câncer
-                        infantil a seguirem sua rotina médica. </p>
-                    <p>O aplicativo possui ferramentas e informações úteis para a organização dos pais e diversos jogos
-                        educativos voltados às crianças.</p>
-                    <p>O DinoApp é uma PWA, um aplicativo web que se comporta como um aplicativo nativo quando pode ser
-                        instalado e como uma página web quando não pode.</p>
+                <div class="dino-page-text">
+                    <div class="project-description">
+                        <p>Dino, como é carinhosamente chamado, é um aplicativo feito em parceria com o Hospital de Clínicas
+                            de Porto Alegre e tem como principal objetivo incentivar crianças em tratamento de câncer
+                            infantil a seguirem sua rotina médica. </p>
+                        <p>O aplicativo possui ferramentas e informações úteis para a organização dos pais e diversos jogos
+                            educativos voltados às crianças.</p>
+                        <p>O DinoApp é uma PWA, um aplicativo web que se comporta como um aplicativo nativo quando pode ser
+                            instalado e como uma página web quando não pode.</p>
+                    </div>
+                    <input id="Queridino" class="native-hidden" type="checkbox" />
                 </div>
 
                 <div class="project-buttons">
                     <button class="button-tab-menu" id="BotaoFuncionalidades" onclick="showMenuTab(event, 'Funcionalidades')">Funcionalidades</button>
                     <button class="button-tab-menu" id="BotaoInfantil" onclick="showMenuTab(event, 'Infantil')">Área Infantil</button>
+                    <button class="button-tab-menu" id="Close" onclick="showMenuTab(event, 'close')">X</button>
                 </div>
                 
                 <div id="Funcionalidades" class="tab-menu">
@@ -65,6 +70,8 @@
                         <button class="tablinks" onclick="openTab(event, 'FAQ')"><i class="fa fa-comments"></i> FAQ</button>
                         <button class="tablinks" onclick="openTab(event, 'Notas')"><i class="fa fa-sticky-note"></i> Notas</button>
                         <button class="tablinks" onclick="openTab(event, 'Reportar')"><i class="fa fa-bug"></i> Reportar Problema</button>
+                        <button class="tablinks" onclick="openTab(event, 'Temas')"><i class="fa fa-pencil"></i> Temas</button>
+                        <button class="tablinks" onclick="openTab(event, 'Traducao')"><i class="fa fa-globe"></i> Tradução</button>
                     </div>
 
                     <div id="Agenda" class="tabcontent">
@@ -103,6 +110,34 @@
                             <p>Aqui os usuários podem relatar problemas encontrados no aplicativo durante a fase de produção pra que ele sejam resolvidos.</p>
                         </div>
                     </div>
+                    <div id="Temas" class="tabcontent">
+                        <div class="tab-img-text">
+                            <div class="theme-item">
+                                <img src="./images/teddyBear.jpeg" alt="">
+                                <p>Ursinho de Pelúcia (Claro)</p>
+                            </div>
+                            <div class="theme-item">
+                                <img src="./images/cottonCandy.jpeg" alt="">
+                                <p>Algodão Doce (Claro)</p>
+                            </div>
+                            <div class="theme-item">
+                                <img src="./images/mint.jpeg" alt="">
+                                <p>Menta (Escuro)</p>
+                            </div>
+                            <div class="theme-item">
+                                <img src="./images/eggplant.jpeg" alt="">
+                                <p>Beringela (Escuro)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Traducao" class="tabcontent">
+                        <div class="tab-img-text">
+                            <img src="./images/portuguese.jpeg" alt="">
+                            <img src="./images/english.jpeg" alt="">
+                        </div>
+                        <p style="text-align: center;">Tradução completa de todo o app para o inglês!</p>
+                    </div>
+
                 </div>
                 <div id="Infantil" class="tab-menu">
                     <div class="tab">
@@ -120,7 +155,7 @@
                     <div id="Dinogotchi" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/dinogotchi.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>Logo na entrada da área infantil as crianças conhecem o mascote Queridino, feito para acompanhá-las durante o tratamento. É possível cuidar dele, botá-lo para dormir, personalizá-lo e até mesmo jogar alguns jogos com ele e seus amigos.</p>
                         </div>
                     </div>
                     <div id="Personalizar" class="tabcontent">
@@ -132,43 +167,43 @@
                     <div id="GameMenu" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/gameMenu.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>Um menu bem colorido e divertido para que a criança possa escolher um jogo para brincar. Todos os jogos foram programados do zero pelos intregrantes do PET, inspirados por jogos clássicos.</p>
                         </div>
                     </div>
                     <div id="Corredor" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/runner.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>Um jogo de corrida infinita onde você controla o queridino e tem que evitar as bactérias! Quanto mais longe você chegar, mais pontos você ganha!</p>
                         </div>
                     </div>
                     <div id="Memoria" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/memoria.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>O famoso jogo da memória onde você deve encontrar os pares do Queridino e de seus amigos!</p>
                         </div>
                     </div>
                     <div id="Slider" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/slider.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>Um jogo de raciocínio para treinar a estratégia! Combine os números iguais para chegar a valores cada vez mais altos!</p>
                         </div>
                     </div>
                     <div id="Cobra" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/cobra.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>O bom e velho jogo da cobrinha! Coma ovinhos e fique cada vez maior!</p>
                         </div>
                     </div>
                     <div id="Musical" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/musical.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>Um jogo de repetir padrões! Teste sua memória reproduzindo as sequências de imagem e som!</p>
                         </div>
                     </div>
                     <div id="TicTac" class="tabcontent">
                         <div class="tab-img-text">
                             <img src="./images/tictac.PNG" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque nesciunt distinctio unde laboriosam minus soluta expedita ipsam aut! Non, architecto. Omnis veritatis molestiae aperiam!</p>
+                            <p>O clássico Jogo da Velha! Desafie um amigo ou a própria inteligência artificial para uma partida!</p>
                         </div>
                     </div>
                 </div>

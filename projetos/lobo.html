@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
+        <link REL="SHORTCUT ICON" HREF="../images/LogoPET_SemRiscos.ico">
         <link rel="stylesheet" href="../styles.css">
         <title>Projetos - Lobo</title>
     </head>
@@ -27,7 +28,7 @@
                 <div class="project-header flex">
                     <div class="project-logo">
                         <img class="hexagon-img" src="../images/hexagon.png" alt="hexagono azul">
-                        <img class="project-img" src="../images/006-lobo.png" alt="ícone lobo">
+                        <img class="project-img" src="../images/006-lobo.png" alt="ícone lobo" onclick="document.getElementById('Howl').play();">
                     </div>
                     <div class="project-header-text">
                         <h2>LoBo Brain</h2>
@@ -42,7 +43,7 @@
                         <p>O produto desenvolvido implementa um centro de tomada de decisões para os jogos de tabuleiros já presentes no Lobo Games, permitindo que um jogador pudesse jogar mesmo sem outro jogador disponível.</p>
                         <p>O Lobo utiliza métodos de Inteligência Artificial voltados para a teoria dos jogos, como Reinforcement Learning e o algoritmo Minimax.</p>
                     </div>
-                    <a href="https://github.com/petcomputacaoufrgs/lobo-brain" target="_blank">Veja o github desse projeto -></a>
+                    <a href="https://github.com/petcomputacaoufrgs/lobo-brain" target="_blank">Veja o github desse projeto →</a>
                 </div>
             </div>
         </div>
@@ -76,5 +77,6 @@
             </div>
         </footer>
         <script src="./scripts.js"></script>
+        <audio id="Howl" src="../audio/howling.wav"></audio>
     </body>
 </html>

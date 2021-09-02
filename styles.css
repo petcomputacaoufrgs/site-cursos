@@ -166,6 +166,11 @@ html {
     margin: auto;
 }
 
+.project-logo input {
+    grid-area: 1 / 1;
+    margin: auto;
+}
+
 .project-img{
     height: 29vh;
 }
@@ -181,6 +186,7 @@ html {
 
 .project-description {
     margin: 1.25rem 0;
+    text-align: justify;
 }
 
 .project-content h4 {
@@ -232,6 +238,8 @@ html {
     padding: 22px 16px;
     width: 100%;
     border: none;
+    border-right: 3px solid #999;
+    border-radius: 0;
     outline: none;
     text-align: left;
     cursor: pointer;

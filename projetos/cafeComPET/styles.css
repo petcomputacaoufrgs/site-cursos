@@ -16,6 +16,17 @@
   text-align: center;
 }
 
+input[type="checkbox"]#LogoCafe {
+  content: url('../../images/007-gatinha.png');
+  display: flex;
+  height: 29vh;
+  -webkit-appearance: none;
+}
+input[type="checkbox"]#LogoCafe:checked {
+  content: url('../../images/cafe_com_pet_logo.png');
+  height: 22vh;
+}
+
 @media (min-width:901px) {
   .project-header-text h2 {
     font-size: 5.5rem;

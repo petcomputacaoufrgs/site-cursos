@@ -1,0 +1,23 @@
+.penguin-img {
+    height: 35vh;
+    grid-area: 1 / 1;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.penguin-img #HatUp {
+    height: 35vh;
+    display: none;
+}
+
+.penguin-img #HatDown {
+    height: 35vh;
+}
+
+.penguin-img:hover #HatUp {
+    display: block;
+}
+
+.penguin-img:hover #HatDown {
+    display: none;
+}
