@@ -4,43 +4,83 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
+        <link REL="SHORTCUT ICON" HREF="../../images/LogoPET_SemRiscos.ico">
         <link rel="stylesheet" href="../../styles.css">
         <link rel="stylesheet" href="./styles.css">
         <title>Projetos - Pinguim</title>
     </head>
-    <body class="pinguim flex-box">
-        <div class="lateral-information flex-box">
-            <div class="dentro-informacoes flex-box">
-                <img src="../../images/LogoPET_oficial.png" alt="logo PET Computacao" class="logo-pet">
-                <div class="informacoes-baixo flex-box">
-                    <a target="_blank" href="https://www.inf.ufrgs.br/site/pet/" class="botao-info flex-box">
-                        <p>Conheça o pet</p>
-                    </a>
-                    <a href="../index.html" class="botao-info flex-box">
-                        <p>Todos os projetos</p>
-                    </a>
-                    <a href="../../cursos/index.html" class="botao-info flex-box">
-                        <p>Nossos Cursos</p>
-                    </a>
-                    <a target="_blank" href="https://lnk.bio/lEJP" class="botao-info flex-box">
-                        <p>Redes Sociais</p>
-                    </a>
+    <body>
+        <header id="header">
+            <div class="container">
+                <img src="../../images/LogoPET_oficial.png" alt="Logo PET">
+            </div>
+        </header>
+        <nav id="navbar">
+            <div class="container flex" id="navbar-links">
+                <a href="https://inf.ufrgs.br/pet">Home</a>
+                <a href="../index.html#projects">Todos os Projetos</a>
+                <a href="../index.html#courses">Cursos</a>
+                <a href="#footer">Nossas Redes</a>
+            </div>
+        </nav>
+        <div class="content-bg project-page">
+            <div class="container">
+                <div class="project-header flex">
+                    <div class="project-logo">
+                        <img class="hexagon-img" src="../../images/hexagon.png" alt="hexagono azul">
+                        <div class="penguin-img">
+                            <img id="HatDown" src="../../images/pinguim-hat-down.png" alt="">
+                            <img id="HatUp" src="../../images/pinguim-hat-up.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-header-text">
+                        <h2>Pinguim</h2>
+                        <h3>Status: Em desenvolvimento</h3>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h4><span class="bold red">Participantes:</span> Bruno Zimmermann, Heric Rodrigues, João Pedro Silva,  Jordi Pujol, Nicolle Favero, Matheus Almeida e Victória Duarte</h4>
+                    <h4><span class="bold red">Ferramentas:</span> Javascript, HTML, CSS, WebAssembly e Rust</h4>
+                    <div class="project-description">
+                        <p>O projeto Pinguim foi criado em 2021 e tem como objetivo reformular os simuladores de máquinas teóricas utilizadas na disciplina de Teoria da Computação.</p>
+                        <p>A disciplina estuda os limites da computabilidade. E para isso são utilizadas máquinas teóricas, com capacidade de realizar o mesmo que um computador atual, porém de forma mais simplificada. Tais máquinas teóricas rementem aos primeiros modelos de computação, que mais se aproximavam da arquitetura de computadores digitais. No qual o projeto desenvolve a Máquina de Turing, o Cálculo Lambda e a Máquina Norma.</p>
+                        <p>Portanto, os simuladores se inserem como importante ferramenta de auxílio na disciplina para os alunos testarem e validarem seus conhecimentos na elaboração e implementação dos seus algoritmos. Fortalecendo, e incentivando, o propósito do projeto na renovação e reelaboração dos simuladores.</p>
+                        <p>O time que desenvolve o projeto mantém contato com o professor que ministra a disciplina no Instituto de Informática e, com isso, sempre verifica se os objetivos do time estão alinhados com os objetivos do professor.</p>
+                        <p>O projeto tem como objetivo final entregar uma interface mais amigável, como uma melhor performance, além de trazer funcionalidades que facilitem o desenvolvimento e programação dentro desses simuladores.</p>
+                    </div>
+                    <a href="https://doc.rust-lang.org/stable/" target="_blank">Aprenda mais sobre Rust →</a>
                 </div>
             </div>
         </div>
-        <div class="project">
-            <div class="project-info">
-                <h1>Projeto Pinguim</h1>
-                <p></p>
-                <p></p>
-                <p></p>
+        <footer id="footer">
+            <div class="container flex">
+                <div class="item">
+                    <h3>PET Computação</h3>
+                    <p>pet@inf.ufrgs.br</p>
+                </div>
+                <div class="item">
+                    <h4>Nos acompanhe em nossas redes sociais!</h4>
+                    <div class="container flex" id="social-media">
+                        <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project-status">
-                <p><span class="bold-font">Eixo:</span> interação</p>
-                <p><span class="bold-font">Responsáveis:</span> Bruno Zimmermann, Heric Rodrigues, João Pedro Silva, Jordi Pujol e Victória Duarte</p>
-                <p><span class="bold-font">Status:</span> acabou de começar</p>
-            </div>
-            <p><span class="bold-font">Linguagens / Ferramentas usadas:</span> </p>
-        </div>
+        </footer>
+        <script src="../scripts.js"></script>
     </body>
 </html>

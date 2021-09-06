@@ -1,51 +1,23 @@
-.pinguim {
-    background-image: url(./background.png);
+.penguin-img {
+    height: 35vh;
+    grid-area: 1 / 1;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.penguin-img #HatUp {
+    height: 35vh;
+    display: none;
 }
 
-.pinguim h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4rem;
-    color: #DFDEE6;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 3rem;
+.penguin-img #HatDown {
+    height: 35vh;
 }
 
-.dentro-informacoes {
-    background-color: #827A98;
+.penguin-img:hover #HatUp {
+    display: block;
 }
 
-.logo-pet,
-.botao-info {
-    background-color: #BBDEF1;
-    color: #827A98;
-    text-shadow: 0px 4px 4px #00000040;
-    border: 5px solid #827A98;
-}
-
-.botao-info:hover {
-    border: 5px solid #DFDEE6;
-    color: #DFDEE6;
-    cursor: pointer;
-}
-
-.project {
-    margin: 10vmin 0;
-    border-radius: 2rem;
-    padding: 3rem 1rem;
-    background-color: rgba(149, 194, 218, 0.8);
-}
-
-@media only screen and (max-width: 1100px) {
-    .pinguim {
-        flex-direction: column-reverse;
-    }
-
-    .pinguim h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    .project {
-        align-self: center;
-    }
+.penguin-img:hover #HatDown {
+    display: none;
 }
