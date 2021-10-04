@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
+    <link REL="SHORTCUT ICON" HREF="../../images/LogoPET_SemRiscos.ico">
+    <link rel="stylesheet" href="./flickity.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Intregrantes</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="../images/LogoPET_oficial.png" alt="Logo PET">
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="container flex" id="navbar-links">
+            <a href="https://inf.ufrgs.br/pet">Home</a>
+            <a href="../projetos/index.html#projects">Projetos</a>
+            <a href="../projetos/index.html#courses">Cursos</a>
+            <a href="#">Petianos</a>
+            <a href="#footer">Nossas Redes</a>
+        </div>
+    </nav>
+    <div class="content-bg project-page">
+        <div class="container">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="./images/Bê.png">
+                  <div class="caption-text">Bernardo Beneduzi</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Bruno.png">
+                  <div class="caption-text">Bruno Zimmermann</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Duda.png">
+                  <div class="caption-text">Eduarda Waechter</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Edu.png">
+                  <div class="caption-text">Eduardo Fantini</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Heric.png">
+                  <div class="caption-text">Heric Rodrigues</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Léo.png">
+                  <div class="caption-text">Léo de Vasconcelos</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Luccas.png">
+                  <div class="caption-text">Luccas Lima</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Matheus.png">
+                  <div class="caption-text">Matheus Almeida</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/May.png">
+                  <div class="caption-text">Mayra Cademartori</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Nic.png">
+                  <div class="caption-text">Nicolle Favero</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Vítor.png">
+                  <div class="caption-text">Vítor Caruso</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/Érika.png">
+                  <div class="caption-text">Érika Cota</div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container flex">
+            <div class="item">
+                <h3>PET Computação</h3>
+                <p>pet@inf.ufrgs.br</p>
+            </div>
+            <div class="item">
+                <h4>Nos acompanhe em nossas redes sociais!</h4>
+                <div class="container flex" id="social-media">
+                    <a href="https://github.com/petcomputacaoufrgs" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PETCompUFRGS" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtAtfIs2EnANkerAjMas_8A" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/petcompufrgs" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/petcompufrgs/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let liEls = document.querySelectorAll('ul li');
+        let index = 0;
+        window.show = function(increase) {
+            index = index + increase;
+            index = Math.min(Math.max(index,0), liEls.length-1);
+            liEls[index].scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+    <script src="../projetos/scripts.js"></script>
+</body>
+
+</html>

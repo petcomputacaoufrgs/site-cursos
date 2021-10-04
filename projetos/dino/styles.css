@@ -9,43 +9,6 @@
     text-align: justify;
 }
 
-.project-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.project-buttons button {
-    padding: 1rem 0.5rem 1rem  0.5rem;
-    color: #fafafa;
-    font-weight: bold;
-    font-family: Source Code Pro;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 20px;
-    background-color: #77c1d1;
-    width: 40%;
-    cursor: pointer;
-}
-
-.project-buttons button#Close {
-    width: 7%;
-    background-color: #C04F50;
-}
-
-.project-buttons button#Close:hover {
-    background-color: #C46567;
-}
-
-.project-buttons button.active, .project-buttons button:hover {
-    background-color: #619AA7;
-}
-
-.tab-menu {
-    margin-top: 1rem;
-}
-
 .tab-img-text {
     display: flex;
     flex-direction: row;
