@@ -1,0 +1,24 @@
+.raposa-img {
+    height: 25vh;
+    grid-area: 1 / 1;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.raposa-img #PixelArt {
+    height: 25vh;
+    margin-left: 10%;
+    display: none;
+}
+
+.raposa-img #NormalLogo {
+    height: 25vh;
+}
+
+.raposa-img:hover #PixelArt {
+    display: block;
+}
+
+.raposa-img:hover #NormalLogo {
+    display: none;
+}
