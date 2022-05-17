@@ -22,3 +22,18 @@
 .raposa-img:hover #NormalLogo {
     display: none;
 }
+
+.tab-img-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.tab-img-text img {
+    width: 20%;
+}
+
+.tab-img-text p {
+    width: 60%;
+}

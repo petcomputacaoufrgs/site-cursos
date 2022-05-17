@@ -21,3 +21,7 @@
 .penguin-img:hover #HatDown {
     display: none;
 }
+
+.penguin-buttons{
+    justify-content: space-between;
+}

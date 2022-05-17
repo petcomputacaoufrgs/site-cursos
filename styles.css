@@ -81,6 +81,7 @@ html {
     font-family: Source Code Pro;
     font-weight: 700;
     text-decoration: none;
+    text-align: center;
     display: block;
     padding: 20px;
 }
@@ -238,16 +239,28 @@ html {
     cursor: pointer;
 }
 
-.project-buttons button#Close {
+.project-buttons input{
+    padding: 0.6rem;
+    color: #fafafa;
+    font-weight: bold;
+    font-family: Source Code Pro;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #C04F50;
+    cursor: pointer;
+}
+
+.project-buttons button#Close{
     width: 7%;
     background-color: #C04F50;
 }
 
-.project-buttons button#Close:hover {
+.project-buttons button#Close:hover, .project-buttons input:hover{
     background-color: #C46567;
 }
 
-.project-buttons button.active, .project-buttons button:hover {
+.project-buttons button.active, .project-buttons button:hover{
     background-color: #619AA7;
 }
 
@@ -262,6 +275,7 @@ html {
 }
 
 .tab {
+    overflow: hidden;
     background-color: #f1f1f1;
     width: 35%;
     height: auto;
