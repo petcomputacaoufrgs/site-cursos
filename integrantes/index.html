@@ -21,14 +21,15 @@
     <nav id="navbar">
         <div class="container flex" id="navbar-links">
             <a href="https://inf.ufrgs.br/pet">Home</a>
-            <a href="../projetos/index.html#projects">Projetos</a>
+            <a href="../projetos/index.html#projects">Todos os Projetos</a>
             <a href="../projetos/index.html#courses">Cursos</a>
             <a href="#">Petianos</a>
             <a href="#footer">Nossas Redes</a>
         </div>
     </nav>
-    <div class="content-bg project-page">
-        <div class="container">
+    <div class="content-bg project-page flex">
+        <div class="container" id="active-petianos">
+            <h2 class="slide-title">Petianos</h2>
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
@@ -73,25 +74,105 @@
                 </div>
               
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="activePetianosPlusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="activePetianosPlusSlides(1)">&#10095;</a>
               </div>
               <br>
               
               <!-- The dots/circles -->
               <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-                <span class="dot" onclick="currentSlide(8)"></span>
-                <span class="dot" onclick="currentSlide(9)"></span>
-                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(1)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(2)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(3)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(4)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(5)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(6)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(7)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(8)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(9)"></span>
+                <span class="dot" onclick="activePetianosCurrentSlide(10)"></span>
             </div>
         </div>
+        <div class="container" id="ex-petianos">
+          <h2 class="slide-title">Ex-Petianos</h2>
+          <div class="slideshow-container">
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <img src="./images/Alice.png">
+                <div class="caption-text">Alice Carra</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Bê.png">
+                <div class="caption-text">Bernardo Beneduzi</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Bruno.png">
+                <div class="caption-text">Bruno Corrêa</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Duda.png">
+                <div class="caption-text">Eduarda Waechter</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Edu.png">
+                <div class="caption-text">Eduardo Fantini</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Heric.png">
+                <div class="caption-text">Heric Rodrigues</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/João.png">
+                <div class="caption-text">João Pedro Silveira</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Jordi.png">
+                <div class="caption-text">Jordi Pujol</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Léo.png">
+                <div class="caption-text">Léo de Vasconcelos</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/May.png">
+                <div class="caption-text">Mayra Cademartori</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Nic.png">
+                <div class="caption-text">Nicolle Pimentel</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Thiago.png">
+                <div class="caption-text">Thiago Lermen</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/Vic.png">
+                <div class="caption-text">Victoria Duarte</div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="exPetianosPlusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="exPetianosPlusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="exPetianosCurrentSlide(1)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(2)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(3)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(4)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(5)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(6)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(7)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(8)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(9)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(10)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(11)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(12)"></span>
+              <span class="dot" onclick="exPetianosCurrentSlide(13)"></span>
+          </div>
+      </div>
     </div>
     <footer id="footer">
         <div class="container flex">
